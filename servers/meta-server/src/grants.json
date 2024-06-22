@@ -1,6 +1,6 @@
 [
   {
-    "role": "user",
+    "role": "employee",
     "resource": "User",
     "action": "read:own",
     "attributes": "*"
@@ -8,7 +8,19 @@
   {
     "role": "user",
     "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "employee",
+    "resource": "User",
     "action": "create:any",
+    "attributes": "*,!lastName,!password"
+  },
+  {
+    "role": "employee",
+    "resource": "User",
+    "action": "update:any",
     "attributes": "*"
   },
   {
@@ -18,9 +30,21 @@
     "attributes": "*"
   },
   {
+    "role": "employee",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "employee",
+    "resource": "User",
+    "action": "read:any",
     "attributes": "*"
   },
   {
