@@ -15,7 +15,13 @@
     "role": "employee",
     "resource": "User",
     "action": "create:any",
-    "attributes": "*,!lastName,!password"
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
   },
   {
     "role": "employee",
